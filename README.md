@@ -44,45 +44,35 @@ This project is suitable for:
 ## 📂 Project Folder Structure
 
 ```
-OnlineShoppingManagementSystem/
-│
-├── pom.xml                         # Maven dependencies
-│
-└── src/
-    └── main/
-        ├── java/
-        │   └── com/
-        │       └── onlineshop/
-        │           ├── config/
-        │           │   └── HibernateUtil.java
-        │           │
-        │           ├── entity/
-        │           │   ├── User.java
-        │           │   ├── Product.java
-        │           │   ├── Category.java
-        │           │   ├── Order.java
-        │           │   └── Cart.java
-        │           │
-        │           ├── dao/
-        │           │   ├── UserDao.java
-        │           │   ├── ProductDao.java
-        │           │   ├── OrderDao.java
-        │           │   └── CategoryDao.java
-        │           │
-        │           ├── service/
-        │           │   ├── UserService.java
-        │           │   ├── ProductService.java
-        │           │   └── OrderService.java
-        │           │
-        │           ├── util/
-        │           │   └── InputUtil.java
-        │           │
-        │           └── app/
-        │               └── OnlineShoppingApp.java
-        │
-        └── resources/
-            ├── hibernate.cfg.xml
-            └── application.properties
+ShoppingSystem/
+├── src/
+│   └── com/
+│       └── shopingsystem/
+│           ├── App.java                              ← Main Application
+│           ├── config/
+│           │   └── HibernateConfig.java
+│           ├── dao/
+│           │   ├── UserDAO.java
+│           │   ├── ProductDAO.java
+│           │   ├── OrderDAO.java
+│           │   ├── OrderDetailDAO.java
+│           │   └── PaymentDAO.java
+│           ├── model/
+│           │   ├── User.java
+│           │   ├── Product.java
+│           │   ├── Order.java
+│           │   ├── OrderDetail.java
+│           │   └── Payment.java
+│           └── service/
+│               ├── UserService.java
+│               ├── ProductService.java
+│               ├── OrderService.java
+│               ├── OrderDetailService.java
+│               └── PaymentService.java
+├── database/
+│   └── schema.sql                                    ← Manual SQL (for reference)
+├── README.md
+└── pom.xml (optional - agar Maven use kar rahe ho)
 ```
 
 ---
